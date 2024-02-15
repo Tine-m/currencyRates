@@ -16,7 +16,7 @@ public class CurrencyService {
         BufferedReader inputFromUrl = new BufferedReader(new InputStreamReader(url.openStream()));
 
         //Mapning af JSON data til Java objekt vha. Gson
-        // Husk depency i pom.xml og import i denne klasse
+        // Husk dependency i pom.xml og import i denne klasse
         CurrencyRates currencyRates = new Gson().fromJson(inputFromUrl, CurrencyRates.class);
         //Close stream
         inputFromUrl.close();
